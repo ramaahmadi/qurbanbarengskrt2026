@@ -79,7 +79,7 @@ function App() {
       `Jenis Hewan: ${animalName}\n` +
       `Harga: Rp ${Number(formData.customPrice).toLocaleString('id-ID')}\n` +
       `Pesan: ${formData.message || '-'}\n\n` +
-      `Mohon lampirkan bukti transfer pada chat ini ya. Terima kasih!\n\n` +
+      `Mohon info nomor rekening admin untuk transfer ya. Terima kasih!\n\n` +
       `SKRT ! Good Vibes, Good Circle`
     
     const adminNumber = '6282122451622'
