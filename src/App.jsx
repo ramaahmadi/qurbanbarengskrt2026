@@ -177,6 +177,18 @@ function App() {
         </div>
 
         <button
+          type="button"
+          className="donation-btn"
+          onClick={() => {
+            const message = 'Assalamualaikum Admin, saya ingin berdonasi untuk Qurban Bareng SKRT 2026. Mohon info nomor rekening untuk transfer ya. Terima kasih!'
+            const whatsappUrl = `https://wa.me/6282122451622?text=${encodeURIComponent(message)}`
+            window.open(whatsappUrl, '_blank')
+          }}
+        >
+          Ingin Berdonasi?
+        </button>
+
+        <button
           type="submit"
           className="submit-btn"
           disabled={isSubmitting}
@@ -187,22 +199,9 @@ function App() {
 
       <div className="footer">
         <p>SKRT Media - Good Vibes, Good Circle</p>
-        <div className="footer-links">
-          <a href="https://skrtmedia-main.vercel.app/kegiatan/qurban-2026" target="_blank" rel="noopener noreferrer">
-            Kembali ke halaman kegiatan
-          </a>
-          <button 
-            type="button"
-            className="donation-btn"
-            onClick={() => {
-              const message = 'Assalamualaikum Admin, saya ingin berdonasi untuk Qurban Bareng SKRT 2026. Mohon info nomor rekening untuk transfer ya. Terima kasih!'
-              const whatsappUrl = `https://wa.me/6282122451622?text=${encodeURIComponent(message)}`
-              window.open(whatsappUrl, '_blank')
-            }}
-          >
-            Ingin Berdonasi?
-          </button>
-        </div>
+        <a href="https://skrtmedia-main.vercel.app/kegiatan/qurban-2026" target="_blank" rel="noopener noreferrer">
+          Kembali ke halaman kegiatan
+        </a>
       </div>
     </div>
   )
