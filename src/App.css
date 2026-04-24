@@ -187,13 +187,19 @@ body {
 .footer {
   text-align: center;
   color: rgba(255, 255, 255, 0.9);
-  margin-top: auto;
-  padding-top: 20px;
+  margin-top: 30px;
 }
 
 .footer p {
+  margin-bottom: 15px;
   font-size: 0.95rem;
-  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer a {
@@ -213,6 +219,25 @@ body {
   background: rgba(255, 255, 255, 0.3);
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.donation-btn {
+  color: white;
+  font-weight: 500;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 0.95rem;
+  box-shadow: 0 4px 15px rgba(240, 147, 251, 0.3);
+}
+
+.donation-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(240, 147, 251, 0.4);
+  background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
 }
 
 @media (max-width: 768px) {
