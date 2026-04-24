@@ -181,7 +181,7 @@ function App() {
           className="donation-btn"
           onClick={() => {
             const message = 'Assalamualaikum Admin, saya ingin berdonasi untuk Qurban Bareng SKRT 2026. Mohon info nomor rekening untuk transfer ya. Terima kasih!'
-            const whatsappUrl = `https://wa.me/6282122451622?text=${encodeURIComponent(message)}`
+            const whatsappUrl = `https://wa.me/6289647011970?text=${encodeURIComponent(message)}`
             window.open(whatsappUrl, '_blank')
           }}
         >
