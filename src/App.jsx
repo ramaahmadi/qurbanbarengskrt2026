@@ -82,7 +82,7 @@ function App() {
       `Mohon info nomor rekening admin untuk transfer ya. Terima kasih!\n\n` +
       `SKRT ! Good Vibes, Good Circle`
     
-    const adminNumber = '6282122451622'
+    const adminNumber = '6289647011970'
     const whatsappUrl = `https://wa.me/${adminNumber}?text=${encodeURIComponent(message)}`
     
     window.open(whatsappUrl, '_blank')
